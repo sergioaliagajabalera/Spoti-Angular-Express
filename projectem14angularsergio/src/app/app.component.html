@@ -1,0 +1,30 @@
+<div style="position:fixed"class="toolbar" role="banner">
+  
+    <a id="enllaclogo" routerLink=""><span>SpotiClot</span></a>
+      <div class="spacer"></div>
+      <a routerLink="../music">
+          <button mat-icon-button color="primary" aria-label="Example icon button with a heart icon">
+              <span class="material-icons">
+                  speaker
+              </span>
+          </button>
+      </a>
+      <div class="example-button-container">
+          <a routerLink="../favorits">
+              <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+                  <mat-icon>favorite</mat-icon>
+              </button>
+          </a>
+          <a routerLink="">
+          <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+              <mat-icon>home</mat-icon>
+          </button>
+        </a>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+<footer>
+    <app-reproductor></app-reproductor>
+    <div class="spacer"></div> <p>SpotiClot©</p>
+</footer>

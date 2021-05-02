@@ -1,0 +1,22 @@
+<!-- Toolbar -->
+<div class="content">
+    <h1>PISTA</h1>
+    <h2>{{canco.nom}}</h2>
+</div>
+<div class="contenidor">
+    <div id="contenidorimatge" [@mouimatgepista]="stateName" (mouseover)="switchState()" (mouseout)="switchStateenvers()">
+        <img src={{canco.imatge}} />
+    </div>
+    <div id="infopista" >
+        <h2> {{canco.nom}} | {{canco.genere}} | {{canco.any | mostraanyssemoticones}}</h2> 
+        <h3> {{canco.album}} | {{canco.autor}} </h3>   
+    </div>
+    <p>{{canco.duracio | unitatdemidatemps:'minuts'}}</p>
+    <app-reproductor></app-reproductor>
+    <div id="LYRICS">
+        <h3>LYRICS:</h3>
+        <p>{{canco.descripcio}}</p>
+    </div>
+</div>
+  
+<router-outlet></router-outlet>

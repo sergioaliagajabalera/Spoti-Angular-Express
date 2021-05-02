@@ -1,0 +1,17 @@
+<!-- Toolbar -->
+
+<div class="content">
+    <h1>FAVORITS</h1>
+    <button class="botomostraaudio" (click)="toggle()">Mostrar</button>
+    <table cellspacing="50">   
+        <tr [@openClose]="isOpen ? 'open' : 'closed'" *ngFor="let cancon of canco;index as i; first as isPrimer"><td [@divState]="stateName" (mouseover)="switchState()"  style="background-color:gold; border-radius: 20px; box-shadow: 2px 2px 2px black;"><h1>{{cancon.nom}}</h1><a (click)="this.reproductor.audio(cancon.audio)">
+          <button mat-icon-button color="primary" aria-label="Example icon button with a heart icon">
+              <span class="material-icons">
+                play_circle_outline
+              </span>
+          </button>
+      </a>
+      <a href="pista/{{cancon.nom}}"><img style="box-shadow: 2px 2px 2px black;" src="{{cancon.imatge}}"/></a><br/> <a href="artista/{{cancon.autor}}"><button mat-button color="primary">Artista: {{cancon.autor}}</button></a><br/> <a href="album/{{cancon.album}}"><button mat-button color="accent">Album: {{cancon.album}}</button></a></td></tr>
+    </table>
+</div>
+<router-outlet></router-outlet>

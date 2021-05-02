@@ -1,0 +1,17 @@
+
+
+#contenidorimatge{
+  margin: 0% 8%;
+  float: left;
+}
+
+img{
+  position: static;
+  width: 350px;
+}
+
+#infoartista{
+  position: static;
+  margin-left:30%; 
+  width: 40%;
+}

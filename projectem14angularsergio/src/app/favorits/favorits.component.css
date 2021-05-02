@@ -1,0 +1,22 @@
+h1{
+    filter: drop-shadow(1px 1px 1px gold);
+}
+img{
+    width: 350px;
+}
+
+.botomostraaudio{
+    outline: none;
+    border: 0;
+    background-color:gold;
+	color:#123;
+	font-size:25px;
+	font-weight: bold;
+	width:40%;
+	height:50px;
+    filter: drop-shadow(2px 2px 5px gold);
+}
+
+td{
+    filter: drop-shadow(2px 2px 5px gold);
+}

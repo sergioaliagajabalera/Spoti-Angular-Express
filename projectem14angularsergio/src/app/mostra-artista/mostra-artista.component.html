@@ -1,0 +1,18 @@
+
+<!-- Toolbar -->
+<div class="content">
+  <h1>ARTISTA</h1>
+  <h2>{{artista.nick}}</h2>
+</div>
+<div class="contenidor">
+    <div id="contenidorimatge">
+        <img src={{artista.imatge}} />
+    </div>
+    <div id="infoartista" >
+        <h2> {{artista.nom}} {{artista.cognom1}} {{artista.cognom2}}</h2> 
+        <h3> {{artista.edat}} años <img style="width: 25px" [src]="artista.nacionalitat | mostranacionalitatimatge:artista.nacionalitat"/></h3>
+        <p>{{artista.descripcio}}</p>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

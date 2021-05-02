@@ -1,0 +1,22 @@
+
+
+#contenidorimatge{
+    margin: 0% 8%;
+    float: left;
+}
+
+#LYRICS{
+    margin:10% 0% 0% 35%;
+    width: 25%;
+}
+
+img{
+    position: static;
+    width: 350px;
+}
+  
+#infopista{
+    position: static;
+    margin-left:30%; 
+    width: 40%;
+}

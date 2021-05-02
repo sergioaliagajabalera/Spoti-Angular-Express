@@ -1,0 +1,16 @@
+#contenidorimatge{
+    margin: 0% 8%;
+    float: left;
+  }
+  
+  img{
+    position: static;
+    max-width: 250px;
+  }
+  
+  #infoalbum{
+    position: static;
+    margin-left:30%; 
+    width: 40%;
+  }
+

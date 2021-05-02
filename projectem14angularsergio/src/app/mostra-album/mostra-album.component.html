@@ -1,0 +1,18 @@
+
+<!-- Toolbar -->
+<div class="content">
+    <h1>ALBUM</h1>
+    <h2>{{album.nom}}</h2>
+</div>
+<div class="contenidor">
+      <div id="contenidorimatge">
+          <img src={{album.imatge}} />
+      </div>
+      <div id="infoalbum" >
+          <h2> {{album.nom}} | {{album.autor}}</h2> 
+          <h3> {{album.genere}}</h3>
+          <p>{{album.descripcio}}</p>
+      </div>
+  </div>
+  
+  <router-outlet></router-outlet>
